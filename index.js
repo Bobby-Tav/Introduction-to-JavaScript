@@ -289,8 +289,9 @@ Using the vowelCounter function below do the following:
 
 
 function vowelCounter(text) {
-    let regex = /[A,E,I,O,U,a,e,i,o,u]/;
-    let found = regex.match(text);
+  const regex = (/[A,E,I,O,U,a,e,i,o,u]/g);
+  let found = text.match(regex);
+  return found.length;
 }
 
 
